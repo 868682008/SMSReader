@@ -9,9 +9,9 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Theos
-        uses: theos/theos-action@master
+        uses: Randomblock1/theos-action@v1
         with:
-          theos-path: ${{ github.workspace }}/theos
+          theos-dir: 'theos'
 
       - name: Build package
         run: |
